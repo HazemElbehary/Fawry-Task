@@ -56,14 +56,4 @@ public class Cart {
             item.getProduct().setQuantity(item.getProduct().getQuantity() - item.getQuantity());
         }
     }
-
-    // Helper class for shipment details
-    public static class ShipmentDetail {
-        public String name;
-        public double weight;
-        public ShipmentDetail(String name, double weight) {
-            this.name = name;
-            this.weight = weight;
-        }
-    }
 } 

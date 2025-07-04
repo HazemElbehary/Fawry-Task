@@ -12,7 +12,7 @@ public static class Shop
             throw new Exception("Some products are out of stock");
 
         var shippingItems = cart.GetShipmentDetails();
-        double shippingCost = shippingItems.Count * 15;
+        double shippingCost = shippingItems.Count * 10;
 
         double subtotal = cart.Subtotal;
         double total = subtotal + shippingCost;

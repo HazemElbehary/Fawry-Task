@@ -11,8 +11,8 @@ public class Shop {
         if (cart.hasOutOfStock())
             throw new RuntimeException("Some products are out of stock");
 
-        List<Cart.ShipmentDetail> shippingItems = cart.getShipmentDetails();
-        double shippingCost = shippingItems.size() * 15;
+        List<ShipmentDetail> shippingItems = cart.getShipmentDetails();
+        double shippingCost = shippingItems.size() * 10;
 
         double subtotal = cart.getSubtotal();
         double total = subtotal + shippingCost;

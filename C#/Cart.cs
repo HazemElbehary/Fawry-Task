@@ -6,7 +6,7 @@ public class Cart
     public void Add(Product product, int quantity)
     {
         if (quantity > product.Quantity)
-            throw new Exception($"Not enough stock for {product.Name}");
+            throw new Exception($"There is only {product.Quantity} of {product.Name} and you ordered {quantity}");
 
         items.Add(new CartItem(product, quantity));
     }
@@ -15,9 +15,9 @@ public class Cart
 
     public double Subtotal => items.Sum(i => i.TotalPrice);
 
-    public List<(string name, double weight)> GetShipmentDetails()
+    public List<ShipmentDetail> GetShipmentDetails()
     {
-        var list = new List<(string, double)>();
+        var list = new List<ShipmentDetail>();
 
         foreach (var item in items)
         {
@@ -25,7 +25,7 @@ public class Cart
             {
                 for (int i = 0; i < item.Quantity; i++)
                 {
-                    list.Add((s.GetName(), s.GetWeight()));
+                    list.Add(new ShipmentDetail(s.GetName(), s.GetWeight()));
                 }
             }
         }
