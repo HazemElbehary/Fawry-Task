@@ -22,7 +22,6 @@ This repository contains a shopping cart application implemented in both C# and 
 - `C#/` - C# implementation
 - `Java/` - Java implementation
 
-
 ## Notes
 - The class diagram above provides a high-level overview of the main classes and their relationships.
 - The code is organized for clarity and extensibility, following object-oriented principles.
