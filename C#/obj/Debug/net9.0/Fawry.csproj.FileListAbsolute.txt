@@ -1,0 +1,14 @@
+D:\resume\Fawry Task\Fawry\bin\Debug\net9.0\Fawry.exe
+D:\resume\Fawry Task\Fawry\bin\Debug\net9.0\Fawry.deps.json
+D:\resume\Fawry Task\Fawry\bin\Debug\net9.0\Fawry.runtimeconfig.json
+D:\resume\Fawry Task\Fawry\bin\Debug\net9.0\Fawry.dll
+D:\resume\Fawry Task\Fawry\bin\Debug\net9.0\Fawry.pdb
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\Fawry.GeneratedMSBuildEditorConfig.editorconfig
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\Fawry.AssemblyInfoInputs.cache
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\Fawry.AssemblyInfo.cs
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\Fawry.csproj.CoreCompileInputs.cache
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\Fawry.dll
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\refint\Fawry.dll
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\Fawry.pdb
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\Fawry.genruntimeconfig.cache
+D:\resume\Fawry Task\Fawry\obj\Debug\net9.0\ref\Fawry.dll
