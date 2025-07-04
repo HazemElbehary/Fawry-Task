@@ -99,18 +99,6 @@ This repository contains a shopping cart application implemented in both C# and 
 - `C#/` - C# implementation
 - `Java/` - Java implementation
 
-## How to Run
-
-### C#
-1. Navigate to the `C#` directory.
-2. Build the project using your preferred .NET build tool (e.g., `dotnet build`).
-3. Run the application (e.g., `dotnet run`).
-
-### Java
-1. Navigate to the `Java` directory.
-2. Compile the Java files (e.g., `javac *.java`).
-3. Run the application (e.g., `java Program`).
-
 ## Notes
 - The class diagram above provides a high-level overview of the main classes and their relationships.
 - The code is organized for clarity and extensibility, following object-oriented principles.
