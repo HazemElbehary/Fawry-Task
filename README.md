@@ -2,84 +2,7 @@
 
 ## Class Diagram
 
-```mermaid
-classDiagram
-    Product <|-- Cheese
-    Product <|-- Biscuits
-    Product <|-- TV
-    Product <|-- MobileScratchCard
-
-    Cheese ..|> IExpirable
-    Cheese ..|> IShippable
-    Biscuits ..|> IExpirable
-    Biscuits ..|> IShippable
-    TV ..|> IShippable
-
-    CartItem --> Product
-    Cart --> CartItem
-    Cart --> ShipmentDetail
-    Customer --> Cart
-    Shop ..> Cart
-    Shop ..> Customer
-    ShippingService ..> ShipmentDetail
-
-    class Product {
-        +Name: string
-        +Price: double
-        +Quantity: int
-    }
-    class Cheese {
-        +GetExpiryDate(): Date
-        +IsExpired(): bool
-        +GetName(): string
-        +GetWeight(): double
-    }
-    class Biscuits {
-        +GetExpiryDate(): Date
-        +IsExpired(): bool
-        +GetName(): string
-        +GetWeight(): double
-    }
-    class TV {
-        +GetName(): string
-        +GetWeight(): double
-    }
-    class MobileScratchCard {
-    }
-    class IShippable {
-        <<interface>>
-        +GetName(): string
-        +GetWeight(): double
-    }
-    class IExpirable {
-        <<interface>>
-        +IsExpired(): bool
-    }
-    class CartItem {
-        +Product: Product
-        +Quantity: int
-    }
-    class Cart {
-        +Items: List<CartItem>
-        +Add(product: Product, quantity: int): void
-        +GetShipmentDetails(): List<ShipmentDetail>
-        +HasExpiredItems(): bool
-        +HasOutOfStock(): bool
-        +ReduceStock(): void
-    }
-    class ShipmentDetail {
-        +Name: string
-        +Weight: double
-    }
-    class Customer {
-        +Name: string
-        +Cart: Cart
-    }
-    class Shop {
-    }
-    class ShippingService {
-    }
-```
+![Class Diagram](./ClassDiagram.png)
 
 ---
 
@@ -99,17 +22,6 @@ This repository contains a shopping cart application implemented in both C# and 
 - `C#/` - C# implementation
 - `Java/` - Java implementation
 
-## How to Run
-
-### C#
-1. Navigate to the `C#` directory.
-2. Build the project using your preferred .NET build tool (e.g., `dotnet build`).
-3. Run the application (e.g., `dotnet run`).
-
-### Java
-1. Navigate to the `Java` directory.
-2. Compile the Java files (e.g., `javac *.java`).
-3. Run the application (e.g., `java Program`).
 
 ## Notes
 - The class diagram above provides a high-level overview of the main classes and their relationships.
